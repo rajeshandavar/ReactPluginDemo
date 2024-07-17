@@ -1,6 +1,7 @@
 interface Props{
     text : string
-    component : string
+    onConfirmClick(text : string) : void
+    log: (message: string) => void
 }
 
 export default Props;

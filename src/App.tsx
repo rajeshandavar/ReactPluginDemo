@@ -8,7 +8,7 @@ function App(){
           <TextField id="filled-basic" variant="filled" color="success" defaultValue={ComponentName} onChange={(e)=> {
               SetComponentName(e.target.value);
           }}/>          
-          <CommunicationSettings text="Hello World 1" component={ComponentName}/>
+          <CommunicationSettings component={ComponentName}/>
         </>;
 }
 
