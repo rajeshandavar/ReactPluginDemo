@@ -16,7 +16,7 @@ function CommunicationSettings(props: ComponentProps){
     <Suspense fallback = {<div>Loading...</div>}>
         <>
             <div>
-                Message To Component
+                Message To send to the pluggable component :
             <TextField id="filled-basic" variant="filled" color="success" defaultValue={InputText} onChange={(e)=> {
                 SetInputText(e.target.value);
             }}/>
@@ -24,7 +24,7 @@ function CommunicationSettings(props: ComponentProps){
             <div style={{ border: "1px solid red", flexDirection: "column" }}>
                 <Component text={InputText} onConfirmClick={(text: string) => SetStatusText(text)}/>
             </div>
-            <h1>{StatusText}</h1>
+            {StatusText}
         </>
     </Suspense>
     </>;
